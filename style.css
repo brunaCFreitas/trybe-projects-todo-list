@@ -1,0 +1,8 @@
+body {
+    font: normal 18px 'Arial', 'sans-serif';
+    margin-top: 50px;
+}
+
+.selecionado {
+    background-color: gray;
+}
