@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Minha Lista de Tarefas
+    <header>
+        <h1>Minha Lista de Tarefas</h1>
         <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
     </header>
-    <input type="text" id="texto-tarefa">
-    <button type="submit" id="criar-tarefa">Criar</button><br>
-    <button type="submit" id="apaga-tudo">Limpar Tarefas</button>
-    <button type="submit" id="salvar-tarefas">Salvar</button>
-    <button type="submit" id="remover-finalizados">Limpar Tarefas Concluídas</button>
-   <button type="submit" id="mover-cima">Mover p/ cima</button>
-   <button type="submit" id="mover-baixo">Mover p/ baixo</button>
-   <button type="submit" id="remover-selecionado">Remover</button>
-   
+    <div>
+        <input type="text" id="texto-tarefa">
+        <button type="submit" id="criar-tarefa" class="button blue">Criar</button>
+    </div>
     <ol id="lista-tarefas"></ol>
+    <div>
+        <button type="submit" id="apaga-tudo" class="button darkRed">Limpar Tarefas</button>
+        <button type="submit" id="salvar-tarefas" class="button green">Salvar</button>
+        <button type="submit" id="remover-finalizados" class="button blue">Limpar Tarefas Concluídas</button>
+        <button type="submit" id="mover-cima" class="button oldYellow" >Mover p/ cima</button>
+        <button type="submit" id="mover-baixo" class="button oldYellow">Mover p/ baixo</button>
+        <button type="submit" id="remover-selecionado" class="button darkRed">Remover</button>
+    </div>
+   
+    
     
     <script src="script.js"></script>
 </body>

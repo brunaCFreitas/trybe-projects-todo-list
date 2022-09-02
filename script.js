@@ -1,4 +1,5 @@
 const localStorageKey = 'tasks';
+const currentTaskSelector = '.tarefas.selected';
 const taskList = document.getElementById('lista-tarefas');
 const buttonCreateTask = document.getElementById('criar-tarefa');
 const inputTask = document.getElementById('texto-tarefa');
@@ -37,7 +38,7 @@ function addTask(text, completed) {
 
   li.addEventListener('dblclick', onDoubleClickTask);
   li.addEventListener('focusin', (event) => {
-    const element = document.querySelector('.tarefas.selected');
+    const element = document.querySelector(currentTaskSelector);
     if (element) {
       element.classList.remove('selected');
     }
@@ -78,7 +79,7 @@ function onLoad() {
 }
 
 function onClickMoveDown() {
-  const task = document.querySelector('.tarefas.selected');
+  const task = document.querySelector(currentTaskSelector);
   if (!task) {
     return;
   }
@@ -90,7 +91,7 @@ function onClickMoveDown() {
 }
 
 function onClickMoveUp() {
-  const task = document.querySelector('.tarefas.selected');
+  const task = document.querySelector(currentTaskSelector);
   if (!task) {
     return;
   }
@@ -102,7 +103,7 @@ function onClickMoveUp() {
 }
 
 function onClickRemoveSelectedTask() {
-  const task = document.querySelector('.tarefas.selected');
+  const task = document.querySelector(currentTaskSelector);
   if (!task) {
     return;
   }
