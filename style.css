@@ -1,4 +1,4 @@
-.tarefas:focus {
+.tarefas.selected {
     background-color: gray;
 }
 
