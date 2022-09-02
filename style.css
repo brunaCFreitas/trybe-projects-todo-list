@@ -1,8 +1,7 @@
-body {
-    font: normal 18px 'Arial', 'sans-serif';
-    margin-top: 50px;
+.tarefas:focus {
+    background-color: gray;
 }
 
-.selecionado {
-    background-color: gray;
+.completed {
+    text-decoration:line-through solid rgb(0, 0, 0);
 }
